@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <!--Basic Info In The <head>:-->
+    <!--The name of the website to the browser-->
+    <!--The link to the CSS styling-->
+    <head>
+        <title>Ramsey Alsheikh</title>
+        <link rel="stylesheet" type="text/css" href="../styling.css">
+		<link rel="icon" type="image/x-icon" href="../images/favicon.ico?">
+    </head>
+    
+    <body>
+        <!--The header-->
+        <div class="sidenavleft">
+            <h2><a href="cs-research.html">< back</a></h2>
+			<h1 class="light">Delta Queuing</h1>
+			<img src="../images/delta.png" height="250px" class="imgwithborder"></img>
+			<h3 class="light">Delta Queuing is a little-known algorithm, useful for ordering items in a queuing based on time-relevant priority. It is similar to a priority queuing, with the key exception that the "priority" is a physical time (measured in ticks) rather than an abstract label.</h3>
+			
+        </div>
+		<div class="sidenavright">
+		<p><a target="_blank" class="linkdark" href="papers/delta.pdf"> Click here to access the formal research write-up in another tab!</a></p>
+			<br>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Delta queuing is an algorithm in which computer processes are set to sleep for an amount of time offset from the other’s in order to maintain a resource-light process management system. The purpose of this experiment was to implement a delta queuing algorithm within Linux (specifically, Ubuntu)  and observe its efficiency in terms of the computer’s resources. The hypothesis was that the algorithm would be efficient in comparison to a control algorithm implementing no resource-saving methodologies. Two system calls were developed, one for delta queuing and another as a control group. These system calls were called from a user-space wrapper function that outputted many statistics about the system calls.</p>
+			<br>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The delta queuing algorithm was found to be superior in time and process management, while being inferior to the control group in terms of CPU usage and memory usage. Overall, the hypothesis was supported, as the control algorithm was unable to fulfill its ultimate purpose of sleeping for a set amount of time, due to the excessive load per millisecond inherent with not using a delta queuing system. However, delta queuing may not be suitable for all systems. This experiment has applications in the field of low level, operating systems design and software engineering, by illustrating the merits and failures of the delta queuing algorithm.</p>
+			<br>
+			<iframe src="papers/delta.pdf" height="500" width="100%"></iframe>
+			<br>
+			<br>
+			<br>
+		</div> 
+		
+		</div>
+        
+    </body>
+</html>
